@@ -1,0 +1,19 @@
+/** Stylesheet personal **/
+body{
+    font-family:"Segoe UI",Tahoma,Verdana;
+    font-size:14px;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+}
+
+section{
+    padding:20px 0;
+}
+
+section > h2{
+    padding:10px 0;
+    font-size:25px;
+}

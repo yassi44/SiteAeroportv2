@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - My Flask Application</title>
-    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+
+    <!-- Bootstrap Core CSS-->
+    <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Bootstrap SelectPicker -->
+    <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap-select/css/bootstrap-select.min.css"/>
+
+    <!-- Bootstrap Toggle -->
+    <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap-toggle/css/bootstrap-toggle.min.css" />
+
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/static/vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
+
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/content/personnal.css"/>
 </head>
 
 <body>
@@ -18,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand">Aéroport des Comores</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -30,17 +47,37 @@
         </div>
     </div>
 
-    <div class="container body-content">
+    <main class="container body-content">
         {% block content %}{% endblock %}
         <hr />
         <footer>
             <p>&copy; {{ year }} - My Flask Application</p>
         </footer>
-    </div>
+    </main>
 
-    <script src="/static/scripts/jquery-1.10.2.js"></script>
-    <script src="/static/scripts/bootstrap.js"></script>
+    <!-- Vendor -->
+    <!-- jQuery -->
+    <script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS-->
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Datepicker-->
+    <script src="/static/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/static/vendor/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js"></script>
+    
+    <!-- Bootstrap SelectPicker -->
+    <script src="/static/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+    <!-- Bootstrap Timepicker -->
+    <script src="/static/vendor/bootstrap-timepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Bootstrap Toggle -->
+    <script src="/static/vendor/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+
+    <!-- Script perso -->
     <script src="/static/scripts/respond.js"></script>
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
     {% block scripts %}{% endblock %}
 
 </body>
